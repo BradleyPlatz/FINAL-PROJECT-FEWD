@@ -5,9 +5,376 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="app.js"></script>
     <title>Bradley Final Project</title>
 </head>
 <body>
-    <h1>Hello world</h1>
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <p class="top-bar-cta">Check out this new thing!</p>
+    </div>
+
+    <!-- HEADER -->
+    <div class="header">
+        <div class="social-icons">
+            <span class="instagram">i</span>
+            <span class="youtube">y</span>
+            <span class="facebook">f</span>
+            <span class="email">e</span>
+        </div>
+        <div class="logo">
+            <h1>Artist Name</h1>
+        </div>
+        <div class="cart-icon">
+
+<!-- EMBEDDED CART -->
+
+
+<!-- END EMBEDDED CART -->
+
+            <img src="img/easel-icon.png" class="cart-easel">
+        </div>
+    </div>
+
+    <!-- NAVIGATION MENU -->
+    <div class="nav">
+        <span class="nav-item">Portfolio</span>
+            <span class="nav-item">Available Works</span>
+            <span class="nav-item">Prints</span>
+            <span class="nav-item">CV</span>
+    </div>
+
+<main>
+<div class="left">
+    <img class="hero" src="img/JohnWalker_TheGift (1).jpg">
+</div>
+
+
+    <!-- PRODUCT DESCRIPTION AND FORM -->
+<div class="right">
+<!-- <div class="empty"></div> -->
+<div class="description">
+
+    <div class="column">
+        <div class="form-top">
+            <div class="form-top-left">
+                <h2>Artwork Title</h2>
+                <p class="attribute">Oil on Canvas</p>
+                <p class="attribute">2010</p>
+            </div>
+            <div class="form-top-right">
+                <div class="circle"><p class="sticker">NEW</p></div>
+            </div>
+            
+        </div>
+        <div class="form-middle">
+                <p class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                <div class="attribution">
+                    <p class="copyright">
+                        © Copyright 2023 Bradley Platz
+                    </p>
+                    <a href="#" class="TOS" id="TOS" >
+                        Terms of Use
+                    </a>
+                </div>
+        </div>
+
+        <div class="form-bottom">
+            <div class="status-icon">
+            <div class="status-circle"></div>
+            <h3>AVAILABLE</h3>
+            </div>
+            <div id='product-component-1677258060691'></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'moderneden.myshopify.com',
+      storefrontAccessToken: '0101be0072d51f533d55d9282a4f86fc',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: '6745710002223',
+        node: document.getElementById('product-component-1677258060691'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        ":hover": {
+          "background-color": "#4d4d4d"
+        },
+        "background-color": "#2d2d2d",
+        ":focus": {
+          "background-color": "#4d4d4d"
+        },
+        "border-radius": "45px",
+        "padding-left": "40px",
+        "padding-right": "40px"
+      }
+    },
+    "contents": {
+      "img": false,
+      "title": false,
+      "price": false
+    },
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        ":hover": {
+          "background-color": "#4d4d4d"
+        },
+        "background-color": "#2d2d2d",
+        ":focus": {
+          "background-color": "#4d4d4d"
+        },
+        "border-radius": "0px",
+        "padding-left": "20px",
+        "padding-right": "20px"
+      }
+    },
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "option": {},
+  "cart": {
+    "styles": {
+      "button": {
+        ":hover": {
+          "background-color": "#4d4d4d"
+        },
+        "background-color": "#2d2d2d",
+        ":focus": {
+          "background-color": "#4d4d4d"
+        },
+        "border-radius": "0px"
+      },
+      "title": {
+        "color": "#ffffff"
+      },
+      "header": {
+        "color": "#ffffff"
+      },
+      "lineItems": {
+        "color": "#ffffff"
+      },
+      "subtotalText": {
+        "color": "#ffffff"
+      },
+      "subtotal": {
+        "color": "#ffffff"
+      },
+      "notice": {
+        "color": "#ffffff"
+      },
+      "currency": {
+        "color": "#ffffff"
+      },
+      "close": {
+        "color": "#ffffff",
+        ":hover": {
+          "color": "#ffffff"
+        }
+      },
+      "empty": {
+        "color": "#ffffff"
+      },
+      "noteDescription": {
+        "color": "#ffffff"
+      },
+      "discountText": {
+        "color": "#ffffff"
+      },
+      "discountIcon": {
+        "fill": "#ffffff"
+      },
+      "discountAmount": {
+        "color": "#ffffff"
+      },
+      "cart": {
+        "background-color": "#000000"
+      },
+      "footer": {
+        "background-color": "#000000"
+      }
+    },
+    "text": {
+      "total": "Subtotal",
+      "button": "Checkout"
+    },
+    "contents": {
+      "note": true
+    }
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "background-color": "#2d2d2d",
+        ":hover": {
+          "background-color": "#4d4d4d"
+        },
+        ":focus": {
+          "background-color": "#4d4d4d"
+        }
+      }
+    }
+  },
+  "lineItem": {
+    "styles": {
+      "variantTitle": {
+        "color": "#ffffff"
+      },
+      "title": {
+        "color": "#ffffff"
+      },
+      "price": {
+        "color": "#ffffff"
+      },
+      "fullPrice": {
+        "color": "#ffffff"
+      },
+      "discount": {
+        "color": "#ffffff"
+      },
+      "discountIcon": {
+        "fill": "#ffffff"
+      },
+      "quantity": {
+        "color": "#ffffff"
+      },
+      "quantityIncrement": {
+        "color": "#ffffff",
+        "border-color": "#ffffff"
+      },
+      "quantityDecrement": {
+        "color": "#ffffff",
+        "border-color": "#ffffff"
+      },
+      "quantityInput": {
+        "color": "#ffffff",
+        "border-color": "#ffffff"
+      }
+    }
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+
+            <button class="secondary-button" id="aButton">
+                <h3 class="secondary-button-text">Inquire</h3>
+            </button>
+        </div>
+    </div>
+</div>
+
+    <!-- TOS modal -->
+
+    <div class="is-flex" id="tosModal" style="display: none;">
+        <div class="modal-intro">
+            <h2 class="modal-title">Terms of Use</h2>
+            <p>This artwork is protected under creator copyright and may not be reproduced in any form without express written consent of the artist.</p>
+            <a href="#" id="closeTOS">I understand</a>
+        </div>
+    </div>
+
+
+    <!-- INQUIRY FORM -->
+    <div id="aModalMask" style="display: none;"></div>
+    <div class="is-flex" id="aModal" style="display: none;">
+      <div class="modal-intro">
+        <h2 class="modal-title">Interested in purchasing?</h2>
+        <p>Please fill out the form below and we will respond promptly</p>
+      </div>
+        <form id="contact-form">
+            <div class="form-row">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-row">
+            <label for="email">Email address:</label>
+            <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-row">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="button-column">
+                <button class="inquire-button" type="submit" id="submit"><p class="secondary-button-text">Submit</p></button>
+                <a href="#" id="close">Close</a>
+            </div>
+        </form>
+      
+    </div>
+
+    
+
+    <!-- RELATED ARTWORKS -->
+    <!-- <div class="related">
+        
+    </div> -->
+
+</div>
+</main>
+
+
+
 </body>
 </html>
