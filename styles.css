@@ -186,12 +186,7 @@ color: black;
   content: "";
   display: block;
   padding-bottom: 100%;
-}
-
-@media (min-width: 1599px) {
-  .left {
-      background-size: cover;
-  }
+  height: auto;
 }
 
 @media (max-width: 1058px) {
