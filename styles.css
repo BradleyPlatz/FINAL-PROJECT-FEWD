@@ -7,6 +7,7 @@ body {
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
+    margin: 0;
 }
 
 h2 {
@@ -27,33 +28,6 @@ p {
     font-family: 'Lato', sans-serif;
 }
 
-.content {
-    display: grid;
-    grid-template-columns: 50% auto;
-}
-
-
-.left {
-    /* width: 50%; */
-    /* display: flex;
-    align-items: flex-start;
-    justify-content: flex-start; */
-    background-image: url('img/JohnWalker_TheGift.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    min-height: 100vh;
-
-}
-
-.right {
-    /* display: flex;
-    justify-content: space-around;
-    align-items: center; */
-    flex-direction: column;
-
-}
-
 
 /* TOP BAR */
 
@@ -61,7 +35,7 @@ p {
     position: sticky;
     top: 0;
     height: 50px;
-    background-color: #222222; /* change this to your desired background color */
+    background-color: #222222; 
     padding: 0px;
     display: flex;
     justify-content: center;
@@ -79,21 +53,59 @@ p {
     position: sticky;
     top: 50px;
     height: 75px;
-
-    background-color: #fff; /* change this to your desired background color */
+    width: 100%;
+    background-color: #fff; 
     padding: 0px;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
+    justify-content: center;
     z-index: 995;
 }
 
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .instagram, .facebook, .youtube, .twitter {
     height: 30px;
     width: 30px;
     padding: 0px 5px 0px 5px;
 }
 
+@media (max-width: 800px) {
+    .twitter {
+        display: none;
+    }
+  }
+
+  @media (max-width: 760px) {
+    .youtube {
+        display: none;
+    }
+    .logo h1 {
+        font-size: 30px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .twitter {
+        display: none;
+    }
+  }
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .cart-easel {
     height: 50px;
@@ -107,7 +119,7 @@ nav {
     height: 35px;
     border-top: solid #222222 1px;
     border-bottom: solid #222222 1px;
-    background-color: #fff; /* change this to your desired background color */
+    background-color: #fff; 
     padding: 0px;
     display: flex;
     justify-content: center;
@@ -119,29 +131,87 @@ nav {
     padding: 10px;
 }
 
+.nav-item a {
+  text-decoration: none;
+  color: black;
+}
+
+
 .nav-item:hover {
     color: red;
     cursor: pointer;
 }
 
-/* DESCRIPTION AND FORM */
+/* MAIN BODY */
+
+.content {
+    display: grid;
+    grid-template-columns: 50% auto;
+}
+
+@media (max-width: 1058px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+  }
+
+.left {
+    /* width: 50%; */
+    /* display: flex;
+    align-items: flex-start;
+    justify-content: flex-start; */
+    background-image: url('img/JohnWalker_TheGift.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 0;
+    padding-top: 125%;
+    position: relative;
+    /* height: 100%; */
+    /* min-height: 100vh; */
+}
+
+.left::before {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+
+@media (min-width: 1599px) {
+    .left {
+        background-size: cover;
+    }
+  }
+
+  @media (max-width: 1058px) {
+    .left {
+        width: 100vw;
+        background-size: 100%; */
+
+    }
+  }
+
+
+
+.right {
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center; */
+    flex-direction: column;
+
+}
 
 .description {
     border-bottom: solid #222222 1px;
-    background-color: #fff; /* change this to your desired background color */
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
     padding: 60px;
-    
-
 }
-
-/* .column {
-    width: 50%;
-    max-width: 50%;
-} */
 
 .form-top {
     display: flex;
@@ -185,17 +255,6 @@ nav {
     justify-content: center;
     align-items: center;
 }
-
-
-
-/* .status-circle {
-    background-color: green;
-    border-radius: 90px;
-    width: 35px;
-    height: 35px;
-    margin-right:15px;
-
-} */
 
 .status-circle, .status-circle::before {
     content: " ";
@@ -392,24 +451,54 @@ input, textarea {
     z-index: 9998;
 }
 
-/* ARTWORK IMAGE */
 
-
-/* .hero {
-    position: fixed;
-    height: ;
-    width: 48%;
-    max-height: 100%-(125px);
-    padding: 0px 40px 0px 0px;
-} */
-
-/* RELATED */
+/* RELATED WORKS */
 
 .related {
-    border-bottom: solid #222222 1px;
+    background-color: black;
+    color: white;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+}
+
+.related-grid {
+    background-color: black;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-items: center;
     align-items: center;
+    max-width: 100%;
+}
+
+.grid-item img {
+    width: 10vw;
+    height: 10vw;
+    object-fit: cover;
+    background-color: black;
+    margin: 5px;
+}
+
+.grid-item img:hover {
+    object-fit: none;
+    
+  
+}
+
+@media (max-width: 1058px) {
+    .grid-item img {
+        width: 20vw;
+        height: 20vw;
+    }
+  }
+
+.grid-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: blueviolet 5px solid;
+    margin: 12px;
     padding: 20px;
 }
 
@@ -479,18 +568,49 @@ input, textarea {
   
 /* 
   footer */
-/* footer {
-    background-color: black;
-    height: 600px;
-    color: #fff;
+
+footer {
+  background-color: white;
+    height: 400px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 80px;
-} */
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    bottom: 0;
+    
+}
 
+.footer-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-/* Rainbow linearGradient */
+.contact, .contact a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  
+}
+
+.footer-description {
+  width: 100vw;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-description p {
+  padding: 0px 30px 0px 30px;
+}
+
+/* Rainbow Animations */
+/* Use for backgrounds */
+
 
   .rainbow { 
     user-select: none;
@@ -507,3 +627,86 @@ input, textarea {
       background-position-x: 600vw;
     }
   }
+
+
+/* use for text */
+  .rainbow-text {
+    user-select: none;
+    background: repeating-linear-gradient(-45deg, orange 0%, yellow 7.14%,
+    rgb(0,255,255) 21.4%, cyan 28.56%, magenta 42.84%, orange 50%);
+    background-size: 600vw 600vw;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: slide 10s linear infinite forwards;
+  }
+  @keyframes slide {
+    0%{
+      background-position-x: 0%;
+    }
+    100%{
+      background-position-x: 600vw;
+    }
+  }
+
+
+  .norainbow {
+    background: white !important;
+  }
+/* 
+TESTING 
+*/
+
+/* Style for the toggle switch */
+.toggle-switch {
+  position: relative;
+  display: inline;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide the default checkbox */
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Style for the slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+/* Style for the slider when checked */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+/* Style for the checkbox when checked */
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+/* Style for the slider when checked */
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}

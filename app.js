@@ -1,42 +1,43 @@
 window.onload = function() {
-    var button = document.getElementById("aButton");
-    button.addEventListener("click", function() {
-        aModal.style.display = "block";
-        aModalMask.style.display = "block";
-    });
+  const aModal = document.getElementById("aModal");
+  const aModalMask = document.getElementById("aModalMask");
+  const tosModal = document.getElementById("tosModal");
 
-    var button = document.getElementById("close");
-    button.addEventListener("click", function() {
-        aModal.style.display = "none";
-        aModalMask.style.display = "none";
-    });
+  document.getElementById("aButton").addEventListener("click", function() {
+    aModal.style.display = "block";
+    aModalMask.style.display = "block";
+  });
 
-    var button = document.getElementById("TOS");
-    button.addEventListener("click", function() {
-        tosModal.style.display = "block";
-        aModalMask.style.display = "block";
-    });
+  document.getElementById("close").addEventListener("click", function() {
+    aModal.style.display = "none";
+    aModalMask.style.display = "none";
+  });
 
-    var button = document.getElementById("closeTOS");
-    button.addEventListener("click", function() {
-        tosModal.style.display = "none";
-        aModalMask.style.display = "none";
-    });
-    
-  };
-  
+  document.getElementById("TOS").addEventListener("click", function() {
+    tosModal.style.display = "block";
+    aModalMask.style.display = "block";
+  });
 
-const form = document.querySelector('#contact-form');
+  document.getElementById("closeTOS").addEventListener("click", function() {
+    tosModal.style.display = "none";
+    aModalMask.style.display = "none";
+  });
+};
 
-form.addEventListener('submit', (event) => {
+const form = document.querySelector("#contact-form");
+
+form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  const name = document.querySelector('#name').value;
-  const email = document.querySelector('#email').value;
-  const message = document.querySelector('#message').value;
+  const name = document.querySelector("#name").value;
+  const email = document.querySelector("#email").value;
+  const message = document.querySelector("#message").value;
 
   // You can do something with the form data here, like sending it to a server or displaying it on the page.
 
   // Clear the form fields after submission
   form.reset();
 });
+
+
+

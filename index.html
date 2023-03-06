@@ -11,7 +11,10 @@
     <script src="app.js"></script>
     <title>Bradley Final Project</title>
 </head>
+
+
 <body>
+    
     <!-- TOP BAR -->
     <div class="top-bar">
         <p class="top-bar-cta">Check out this new thing!</p>
@@ -33,133 +36,171 @@
         </div>
     </div>
 
-<!-- NAVIGATION MENU -->
-<nav>
-    <span class="nav-item">Portfolio</span>
-        <span class="nav-item">Available Works</span>
-        <span class="nav-item">Prints</span>
-        <span class="nav-item">CV</span>
-</nav>
+    <!-- NAVIGATION MENU -->
+    <nav>
+        <span class="nav-item">Portfolio</span>
+            <span class="nav-item">Available Works</span>
+            <span class="nav-item">Prints</span>
+            <span class="nav-item">CV</span>
+    </nav>
 
 <main>
-<div class="content">
-<div class="left">
-    <!-- <img class="hero" src="img/JohnWalker_TheGift.jpg"> -->
-</div>
-
-
-    <!-- PRODUCT DESCRIPTION AND FORM -->
-<div class="right">
-<!-- <div class="empty"></div> -->
-<div class="description rainbow">
-
-    <div class="column"> 
-        <div class="form-top">
-            <div class="form-top-left">
-                <h2>The Gift</h2>
-                <p class="attribute">Oil on Canvas</p>
-                <p class="attribute">2010</p>
-            </div>
-            <div class="form-top-right">
-                <div class="circle"><p class="sticker">NEW</p></div>
-            </div>
-            
+    <div class="content">
+        <!-- PRODUCT IMAGE -->
+        <div class="left">
         </div>
-        <div class="form-middle">
-                <p class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                <div class="attribution">
-                    <p class="copyright">
-                        © Copyright 2023 John Walker
-                    </p>
-                    <a href="#" class="TOS" id="TOS" >
-                        Terms of Use
-                    </a>
+
+
+        <!-- PRODUCT DESCRIPTION AND FORM -->
+        <div class="right">
+            <div class="description norainbow">
+                <div class="column"> 
+                    <div class="form-top">
+                        <div class="form-top-left">
+                            <h2>The Gift</h2>
+                            <p class="attribute">Oil on Canvas</p>
+                            <p class="attribute">2010</p>
+                        </div>
+                        <div class="form-top-right">
+                            <div class="circle"><p class="sticker">NEW</p></div>
+                        </div>
+                        
+                    </div>
+                    <div class="form-middle">
+                            <p class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                            <div class="attribution">
+                                <p class="copyright">
+                                    © Copyright 2023 John Walker
+                                </p>
+                                <a href="#" class="TOS" id="TOS" >
+                                    Terms of Use
+                                </a>
+                            </div>
+                    </div>
+
+                    <div class="form-bottom">
+                        <div class="status-icon">
+                        <div class="status-circle"></div>
+                        <h3>AVAILABLE</h3>
+                        </div>
+                        <div id='product-component-1677258060691'></div>
+
+
+                        <button class="secondary-button" id="aButton">
+                            <h3 class="secondary-button-text">Inquire</h3>
+                        </button>
+                    </div>
                 </div>
-        </div>
-
-        <div class="form-bottom">
-            <div class="status-icon">
-            <div class="status-circle"></div>
-            <h3>AVAILABLE</h3>
             </div>
-            <div id='product-component-1677258060691'></div>
 
-
-            <button class="secondary-button" id="aButton">
-                <h3 class="secondary-button-text">Inquire</h3>
-            </button>
-        </div>
-    </div>
-</div>
-
-
-
-    
-
-    <!-- RELATED ARTWORKS -->
-    <!-- <div class="related">
-        
-    </div> -->
-
-</div>
-</div>
-</main>
-<footer>
-      <div class="footer-logo">
-        <img src="logo.png" alt="Logo">
-      </div>
-      <nav class="footer-menu">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="footer-description">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-
-  </footer>
-  
-
-    <!-- TOS modal -->
+            <!-- TOS modal -->
 
     <div class="is-flex" id="tosModal" style="display: none;">
         <div class="modal-intro">
             <h2 class="modal-title">Terms of Use</h2>
-            <p>This artwork is protected under creator copyright and may not be reproduced in any form without express written consent of the artist.</p>
-            <a href="#" id="closeTOS">I understand</a>
+            <p>Copyright © 2023 by John Walker</p>
+
+                <p>All rights reserved. No artwork may be reproduced, distributed, or transmitted in any form or by any means, including photocopying, recording, or other electronic or mechanical methods, without the prior written permission of the publisher, except in the case of brief quotations embodied in critical reviews and certain other noncommercial uses permitted by copyright law. For permission requests, write to the artist, addressed “Attention: Permissions Coordinator,” at the address below.</p>
+                
+                <p>
+                John Walker<br/>
+                1233 Pennsylvania Avenue<br/>
+                San Francisco, CA 94909<br/>
+               </p>
+                
+            <p><a href="#" id="closeTOS">I understand</a></p>
         </div>
     </div>
 
 
-    <!-- INQUIRY FORM -->
-    <div id="aModalMask" style="display: none;"></div>
-    <div class="is-flex" id="aModal" style="display: none;">
-      <div class="modal-intro">
-        <h2 class="modal-title">Interested in purchasing?</h2>
-        <p>Please fill out the form below and we will respond promptly</p>
-      </div>
-        <form id="contact-form">
-            <div class="form-row">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-row">
-            <label for="email">Email address:</label>
-            <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-row">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            </div>
-            <div class="button-column">
-                <button class="inquire-button" type="submit" id="submit"><p class="secondary-button-text">Submit</p></button>
-                <a href="#" id="close">Close</a>
-            </div>
-        </form>
-      
+<!-- INQUIRY FORM -->
+    <div id="aModalMask" style="display: none;">
     </div>
+        <div class="is-flex" id="aModal" style="display: none;">
+            <div class="modal-intro">
+                <h2 class="modal-title">Interested in purchasing?</h2>
+                <p>Please fill out the form below and we will respond promptly</p>
+            </div>
+            <form id="contact-form">
+                <div class="form-row">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-row">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div class="button-column">
+                    <button class="inquire-button" type="submit" id="submit"><p class="secondary-button-text">Submit</p></button>
+                    <a href="#" id="close">Close</a>
+                </div>
+            </form>
+      
+        </div>
+
+
+            <!-- RELATED ARTWORKS -->
+            <div class="related">
+            <h3 class="grid-heading">More from this series</h3>
+                <div class="related-grid">
+                <div class="grid-item"> <img src="img/JohnWalker_TheNighttheSkyFell_Unframed_WEB_2000x.webp"></div>
+                <div class="grid-item"> <img src="img/JohnWalker_ThePurloinedMoon_2000x.webp"></div>
+                <div class="grid-item"> <img src="img/JohnWalker_TheSpectralViewer_2000x.jpg"></div>
+                <div class="grid-item"> <img src="img/JohnWalker-Anticipation_2000x.webp"></div>
+                <div class="grid-item"> <img src="img/JohnWalker-DreamsforYou_2000x.jpg"></div>
+                <div class="grid-item"> <img src="img/JohnWalker-Juggler_sDayOut_2000x.webp"></div>
+                <div class="grid-item"> <img src="img/JohnWalker-WhoWouldLiketoBuyaDream_WEB_2000x.webp"></div>
+                <div class="grid-item"> <img src="img/JohnWalker-WhoWouldLiketoBuyaDream_WEB_2000x.webp"></div>
+            </div>
+          </div>
+
+        </div>
+    </div>
+</main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="contact">
+            <h1 class="norainbowtext">Artist Name</h1>
+            <h4 class="mail"><a href="mailto:artist@artistname.com">artist@artistname.com</h4></a>
+        </div>
+        <div class="footer-menu" id="noBullets">
+            <div class="nav-item"><a href="#">Home</a></div>
+            <div class="nav-item"><a href="#">About Us</a></div>
+            <div class="nav-item"><a href="#">Services</a></div>
+            <div class="nav-item"><a href="#">Contact</a></div>
+        </div>
+        <label class="toggle-switch">
+            <input type="checkbox" id="removeRainbow">
+            <span class="slider"></span>
+        </label>
+        <div class="footer-description norainbow">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+    </footer>
 </body>
 </html>
+
+<script>
+const checkbox = document.getElementById('removeRainbow');
+const elements = document.querySelectorAll('.norainbow');
+
+checkbox.addEventListener('change', function() {
+  if (checkbox.checked) {
+    for (let i = 0; i < elements.length; i++) {
+      elements[i].classList.remove('norainbow');
+      elements[i].classList.add('rainbow');
+    }
+  } else {
+    for (let i = 0; i < elements.length; i++) {
+      elements[i].classList.remove('rainbow');
+      elements[i].classList.add('norainbow');
+    }
+  }
+});
+</script>
