@@ -80,12 +80,12 @@ p {
     }
   }
 
-  @media (max-width: 760px) {
+  @media (max-width: 845px) {
     .youtube {
         display: none;
     }
     .logo h1 {
-        font-size: 28px;
+        font-size: 20px;
     }
   }
 
@@ -158,6 +158,7 @@ nav {
     }
   }
 
+
 .left {
     /* width: 50%; */
     /* display: flex;
@@ -200,14 +201,8 @@ nav {
     justify-content: space-around;
     align-items: center; */
     flex-direction: column;
-
 }
 
-@media (max-width: 760px) {
-  .right {
-      width: 100vw;
-  }
-}
 
 .description {
     border-bottom: solid #222222 1px;
@@ -215,13 +210,14 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
-    padding: 60px;
+    align-items: flex-start;
+    padding: 10vw; 
+    /* BP - was 60px */
 }
 
 .form-top {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
 }
 
@@ -233,6 +229,12 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 767px) {
+  .circle {
+  display: none;
+}
 }
 
 .sticker {
@@ -255,6 +257,14 @@ nav {
     align-items: center;
 }
 
+@media (max-width: 767px) {
+  .form-bottom {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+}
+
+
 .status-icon {
     color: green;
     display: flex;
@@ -262,9 +272,12 @@ nav {
     align-items: center;
 }
 
+.status-text {
+  padding-left: 15px;
+}
 .status-circle, .status-circle::before {
     content: " ";
-    margin: 15px;
+    /* margin: 15px; */
     width: 15px;
     height: 15px;
     margin: 0 auto;
@@ -273,7 +286,6 @@ nav {
     border-radius: 90px;
     width: 30px;
     height: 30px;
-    margin-right:15px;
   }
   
   .status-circle::before {
@@ -297,6 +309,14 @@ nav {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+}
+
+@media (max-width: 767px) {
+  .attribution {
+      flex-direction: column;
+      align-items: flex-start;
+      padding-bottom: 20px;
+  }
 }
 
 .copyright {
@@ -330,6 +350,12 @@ nav {
 
 .secondary-button-text {
     color: #fff;
+}
+
+@media (max-width: 767px) {
+  .secondary-button {
+    width: 100%;
+}
 }
 
 
