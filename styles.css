@@ -203,6 +203,13 @@ nav {
 
 }
 
+@media (max-width: 760px) {
+  .right {
+      width: 100%;
+      max-width: 100vw;
+  }
+}
+
 .description {
     border-bottom: solid #222222 1px;
     background-color: #fff;
@@ -461,6 +468,13 @@ input, textarea {
     flex-direction: column;
     padding: 20px;
     margin: 20px;
+}
+
+@media (max-width: 760px) {
+  .related {
+      width: 100%;
+      max-width: 100vw;
+  }
 }
 
 .related-grid {
