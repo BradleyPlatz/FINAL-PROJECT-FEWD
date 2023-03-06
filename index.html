@@ -28,7 +28,7 @@
             <a href="#facebook"><img class="facebook" src="img/sm-icon_0000_Layer-2.png"></a>
             <a href="#twitter"><img class="twitter" src="img/sm-icon_0002_Layer-4.png"></a>
         </div>
-        <div class="logo">
+        <div class="logo norainbow-text">
             <h1>Artist Name</h1>
         </div>
         <div class="cart-icon">
@@ -100,13 +100,8 @@
             <h2 class="modal-title">Terms of Use</h2>
             <p>Copyright © 2023 by John Walker</p>
 
-                <p>All rights reserved. No artwork may be reproduced, distributed, or transmitted in any form or by any means, including photocopying, recording, or other electronic or mechanical methods, without the prior written permission of the publisher, except in the case of brief quotations embodied in critical reviews and certain other noncommercial uses permitted by copyright law. For permission requests, write to the artist, addressed “Attention: Permissions Coordinator,” at the address below.</p>
+                <p>All rights reserved. No artwork may be reproduced, distributed, or transmitted in any form or by any means, including photocopying, recording, or other electronic or mechanical methods, without the prior written permission of the publisher, except in the case of brief quotations embodied in critical reviews and certain other noncommercial uses permitted by copyright law. For permission requests, write to the artist at contact@somefamousartist.com</p>
                 
-                <p>
-                John Walker<br/>
-                1233 Pennsylvania Avenue<br/>
-                San Francisco, CA 94909<br/>
-               </p>
                 
             <p><a href="#" id="closeTOS">I understand</a></p>
         </div>
@@ -165,18 +160,21 @@
     <!-- FOOTER -->
     <footer>
         <div class="contact">
-            <h1 class="norainbowtext">Artist Name</h1>
+            <h1>Artist Name</h1>
             <h4 class="mail"><a href="mailto:artist@artistname.com">artist@artistname.com</h4></a>
         </div>
-        <div class="footer-menu" id="noBullets">
-            <div class="nav-item"><a href="#">Home</a></div>
-            <div class="nav-item"><a href="#">About Us</a></div>
+        <div class="footer-menu">
+            <div class="nav-item"><a href="#">Portfolio</a></div>
+            <div class="nav-item"><a href="#">Prints</a></div>
             <div class="nav-item"><a href="#">Services</a></div>
             <div class="nav-item"><a href="#">Contact</a></div>
         </div>
+        <h3 class="label rainbow-text">Rainbow Mode</h3>
         <label class="toggle-switch">
+            
             <input type="checkbox" id="removeRainbow">
             <span class="slider"></span>
+           
         </label>
         <div class="footer-description norainbow">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -186,6 +184,11 @@
 </body>
 </html>
 
+
+<!-- Added script below since it wasn't working on app.js. I've seen this before and assume the html needed to load before the script fired. -->
+<!-- trying to get this toggle to also turn all black text white, and all white backgrounds black while deferring to rainbow and rainbow-text classes. Almost got there, but couldn't affect all elements
+   -->
+   
 <script>
 const checkbox = document.getElementById('removeRainbow');
 const elements = document.querySelectorAll('.norainbow');
@@ -196,11 +199,22 @@ checkbox.addEventListener('change', function() {
       elements[i].classList.remove('norainbow');
       elements[i].classList.add('rainbow');
     }
+    const whiteElements = document.querySelectorAll('.norainbow-text');
+    for (let i = 0; i < whiteElements.length; i++) {
+      whiteElements[i].classList.remove('norainbow-text');
+      whiteElements[i].classList.add('rainbow-text');
+    }
   } else {
     for (let i = 0; i < elements.length; i++) {
       elements[i].classList.remove('rainbow');
       elements[i].classList.add('norainbow');
     }
+    const blackElements = document.querySelectorAll('.rainbow-text');
+    for (let i = 0; i < blackElements.length; i++) {
+      blackElements[i].classList.remove('rainbow-text');
+      blackElements[i].classList.add('norainbow-text');
+    }
   }
 });
+
 </script>

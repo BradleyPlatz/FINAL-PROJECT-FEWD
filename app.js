@@ -32,10 +32,7 @@ form.addEventListener("submit", (event) => {
   const name = document.querySelector("#name").value;
   const email = document.querySelector("#email").value;
   const message = document.querySelector("#message").value;
-
-  // You can do something with the form data here, like sending it to a server or displaying it on the page.
-
-  // Clear the form fields after submission
+  // need to figure out how to send form here //
   form.reset();
 });
 
