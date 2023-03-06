@@ -445,7 +445,7 @@ input, textarea {
     height: 60px;
 }
   
-  /* Style for image-mask-darken effect */
+/* Style for image-mask-darken effect */
 
 #aModalMask {
     position: fixed;
@@ -466,14 +466,14 @@ input, textarea {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    margin: 20px;
+    /* margin: 20px; */
 }
 
-@media (max-width: 760px) {
+/* @media (max-width: 760px) {
   .related {
       width: 100vw;
   }
-}
+} */
 
 .related-grid {
     background-color: black;
@@ -489,28 +489,28 @@ input, textarea {
     height: 10vw;
     object-fit: cover;
     background-color: black;
-    margin: 5px;
+    padding-bottom: 10px;
+    /* margin: 5px; */
 }
 
 .grid-item img:hover {
     object-fit: none;
-    
-  
 }
 
-@media (max-width: 1058px) {
+  @media (max-width: 1058px) {
     .grid-item img {
         width: 20vw;
         height: 20vw;
     }
   }
 
+
 .grid-heading {
     display: flex;
     align-items: center;
     justify-content: center;
     border-bottom: blueviolet 5px solid;
-    margin: 12px;
+    /* margin: 12px; */
     padding: 0px 20px 20px 20px;
 }
 
